@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    /* border: 1px dashed rgba(255, 255, 255, 0.536); */
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins'
+}
+
+h1, h2, h3 {
+    text-align: left;
+    margin:5px;`
+}
+
+h2 {
+    font-size: 18px;
+}
+
+p {
+    text-align: justify;
+}
+
+img {
+    max-width: 100vw;
+    object-fit: contain;
+}
+
+.center-content {
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.fixed-header {
+    position: sticky; 
+    top: 0;
+    z-index: 1;    
+}
+
+.hidden {
+    display:none !important;
+}
+
+.second-header {
+    width: 100vw;
+    min-height: 60px;
+    box-shadow: 1px 1px 1px 1px rgba(93, 93, 93, 0.137);
+
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+
+    background-color:hsl(235, 70%, 50%);
+}
+
+.second-header ul {
+
+    
+    
+    display: flex; 
+    gap: 10px;
+
+    color: white;
+    list-style: none;
+
+}
+
+.second-menu__wrapper {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.reserve-button {
+    max-height: 50px;
+    min-width: 300px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+
+    flex-basis: 150px;
+
+    background-color: hsl(337, 70%, 50%);
+    color: white;
+}
+
+.body__header {
+    max-height: 60px;
+    width: 100vw;
+    padding: 20px;
+
+    display: flex; 
+    justify-content: space-evenly;
+    align-items: center;
+
+    
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px rgba(93, 93, 93, 0.137);
+
+
+}
+
+.header__logo {
+    max-height: inherit;
+}
+
+.header__logo img {
+    max-height: inherit;
+    width: 60%;
+    object-fit: contain;
+}
+
+.header__nav {
+    display: flex; 
+    align-items: center;
+    gap: 10px;
+}
+
+.header__search input {
+    padding: 15px 30px;
+    border-radius: 50px;
+    border: 1px solid rgba(211, 211, 211, 0.939);
+    height: 18px;
+
+    color: rgb(10, 10, 10);
+    font-family: Poppins;
+}
+
+.header__nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+}
+
+.header_nav a:visited {
+    color: black;
+}
+
+.nav__menu {
+    padding: 5px 25px;
+    
+    border: 1px solid lightgray;
+    border-radius: 30px; 
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    
+}
+
+.menu__profile {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid gray;
+    position: relative;
+    background-color: gray;
+    overflow: hidden;
+    
+}
+.menu__wrapper {
+    position: relative;
+}
+.menu__wrapper::after {
+    content: ' ';
+    background-color:hsl(337, 70%, 50%);
+
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    
+
+    position: absolute;
+    right: -2px;
+    bottom: 18px;
+    
+}
+
+.head {
+
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    
+    background-color: white;
+    position: absolute;
+    top: calc(5px);
+    left: calc(5px);;
+
+}
+
+.body {
+
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    
+    background-color: white;
+    position: absolute;
+    top: 17px;
+    left: 0px;
+
+}
+
+.main__images img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.body__bookings {
+    display: flex; 
+    align-items: center;
+    gap: 10px;
+}
+
+.bookings__details {
+    flex-basis: 60%;
+    height: 800px;
+    padding: 1rem 3rem;
+    border-radius: 5px;
+
+    
+    
+    background-color: hsl(169, 70%, 50%);
+    color: white;
+
+}
+
+.bookings__payments {
+
+    min-height: 200px;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+
+    flex-basis: 40%;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;;
+
+    position: sticky; 
+    top: 70px;
+
+
+    background-color: white;
+    color: black;
+
+}
+
+.date-picker {
+    display: flex; 
+    flex-wrap: wrap;
+    border: 1px solid rgba(190, 190, 190, 0.66);
+    border-radius: 5px;
+
+}
+
+.date-picker > *{
+    padding: 10px 15px;
+    border: 1px solid rgba(190, 190, 190, 0.66);
+    text-align: center;
+}
+
+
+.date-picker > [class^='check'] {
+    flex-basis: 50%;
+}
+
+.date-picker > [class='guests']{
+    flex-basis: 100%;
+
+}
+
+.body__content {
+    padding: 1rem 3rem;
+    margin-top: 15px;
+    border-radius: 5px;
+
+
+    background-color: hsl(269, 70%, 50%);
+    color: rgb(231, 231, 231);
+    
+
+    text-align:justify
+    
+}
